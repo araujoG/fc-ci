@@ -1,0 +1,22 @@
+﻿{
+  "name": "ci-sonarcloud-challenge",
+  "version": "1.0.0",
+  "description": "Simple Node.js calculator with CI/CD pipeline using GitHub Actions and SonarCloud",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest --coverage --coverageReporters=lcov --coverageReporters=text"
+  },
+  "keywords": ["ci", "sonarcloud", "github-actions", "jest"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  }
+}
